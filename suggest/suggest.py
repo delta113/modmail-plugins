@@ -57,7 +57,7 @@ class Suggest(commands.Cog):
 
                     embed = discord.Embed(title=suggestion, color=0x59E9FF)
                     embed.set_author(
-                        name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url
+                        name=f"feedback from {ctx.author}:", icon_url=ctx.author.avatar_url
                     )
                     await suggestion_channel.send(embed=embed)
                     await ctx.message.add_reaction("\N{WHITE HEAVY CHECK MARK}")
